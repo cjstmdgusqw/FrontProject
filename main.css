@@ -1,17 +1,8 @@
-#container{
-    margin : 0 auto;
-}
-#header{
-    background-color: white;
-}
-#footer{
-    background-color: yellow;
-}
-.cover3{
-    display: flex;
-}
+#container{width : 100%; margin : 0 auto;}
+/* .header{ height: 150px;} */
+#footer{background-color: yellow;}
 #main{
-    height: 800px;
+    height: 700px;
 }
 .main{
     position: relative;
@@ -20,28 +11,102 @@
     grid-template-columns: auto auto auto;
     width : 65%;
     gap: 20px;
-    height: 500px;
     margin : 0 auto;
+    height: 500px;
 }
+.hol{
+    display: none;
+    font-size: 90px;
+    text-align: center;
+}
+/* nav */
 .nav{
-    overflow: hidden;
-    background-color:transparent;
+    background-color:transparent; 
+    justify-content: center;
+    width: 100%;
+    height: 250px;
 }
-.nav a{
-    float: left;
+.subnav{
+    display: flex;
+    justify-content: center;
+}
+.subnav li{
+    padding :20px 20px;
+    list-style-type: none;
+}
+.subnav a{
     font-size: 25px;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 60px;
     text-decoration: none;
 }
+#home{
+    display: none;
+}
+.header{
+    display : none;
+    text-align: center;
+}
+
+/* hover */
+.nav:hover {
+    background-color: black;
+    color:white;
+}
+.nav:hover a{
+    color:white;
+}
+.nav:hover .header{
+    display: block;
+}
+
+.subnav:hover ~.header{
+    display : block;
+}
+
+.home:hover ~ #home{
+    display: block;
+}
+
+/* 배경이미지 */
+.backImg{
+    background-color: aqua;
+}
+
+
+/* 테이블 */
+.table{
+    padding: 10% 10%;
+    width : 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .cover3{
     display: flex;
 }
 .item{
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* text-align: center;
+    padding: 20px; */
     font-size: 30px;
 }
 
@@ -62,4 +127,10 @@
 }
 .item4{
     border : 3px solid black;
+}
+.btn{
+    padding: 20px;
+    color : black;
+    font-size: 25px;
+    border : none;
 }
