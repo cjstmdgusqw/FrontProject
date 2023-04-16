@@ -5,6 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type = "text/css" href= "/main.css"/>
+    <script src="http://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(function(){
+            var $firstmenu = $('#container > div > div.nav > ul > li'), 
+                $header = $('#container > div > div.nav');
+            $firstmenu.mouseenter(function(){
+                $header.stop().animate({height : '300px'},300)
+            })  
+            .mouseleave(function(){
+                $header.stop().animate({height : '50px'},300)
+            })  
+    
+        });
+    </script>
     <title>Document</title>
 </head>
 <body>
@@ -16,19 +30,30 @@
             <a href=""><div id = "logo" class = "twitter"></div></a>
         </ul>
     </div>
+
+
     <div id="container">
         <div class = "backImg">
             <div class="nav">
                 <ul class="subnav">
-                    <li class="home" href="#home"><a href="">HOME</a></li>
-                    <li href="#home"><a href="">PLAYER</a></li>
-                    <li href="#home"><a href="">MEDIA</a></li>
-                    <li href="#home"><a href="">STORE</a></li> 
-                    <li href="#home"><a href="">TICKET</a></li>
+                    <li><a href="">HOME</a></li>
+                    <li>
+                        <a href="">PLAYER</a>
+                        <ul>
+                            <li>감독/코치</li>
+                            <li>내야수</li>
+                            <li>외야수</li>
+                            <li>포수</li>
+                            <li>투수</li>
+                        </ul>
+                    </li>
+                    <li><a href="">MEDIA</a></li>
+                    <li><a href="">STORE</a></li> 
+                    <li><a href="">TICKET</a></li>
                 </ul> 
-                <header class = "header">
+                <!-- <header class = "header">
                     <div>이미지보일부분</div>
-                </header>
+                </header> -->
             </div>
             <div id = "main">
                 <div class = "title">KT위즈는 우승을 향햐 달려갑니다</div>

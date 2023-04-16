@@ -2,7 +2,7 @@
     padding:0; 
     margin:0;
 }
-body{background-color: brown;  min-width: 1090px;}
+body{background-color: brown; min-width: 1090px;}
 #container{width : 100%; background-color: transparent; margin : 0 auto;}
 /* .header{ height: 150px;} */
 #footer{background-color: yellow;}
@@ -35,26 +35,20 @@ body{background-color: brown;  min-width: 1090px;}
 
 /* nav */
 .nav{
+    background-color:transparent; 
+    justify-content: center;
     width: 100%;
     height: 250px;
-    margin: 0 auto;
-    background:linear-gradient();
-    height:50px; 
-    position: relative;
-    overflow: hidden;
     /* position: fixed;
     left: 0;
     right: 0;
     top : 0; */
 }
-.subnav > li  > a{ line-height:40px;  position: relative;}
-.subnav > li > ul{width:100%; position: absolute; }
-.subnav > li ul li{white-space:nowrap;}
 .subnav{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
-.subnav::after{content:'';display:block; clear:both;}
 .subnav li{
     padding :10px 20px;
     list-style-type: none;
@@ -62,7 +56,8 @@ body{background-color: brown;  min-width: 1090px;}
 .subnav a{
     font-size: 25px;
     color: black;
-    padding: 30px 20px;
+    text-align: center;
+    padding: 14px 60px;
     text-decoration: none;
 }
 #home{
@@ -74,7 +69,7 @@ body{background-color: brown;  min-width: 1090px;}
 }
 
 /* hover */
-/* .nav:hover {
+.nav:hover {
     background-color: black;
     color:white;
 }
@@ -91,7 +86,7 @@ body{background-color: brown;  min-width: 1090px;}
 
 .home:hover ~ #home{
     display: block;
-} */
+}
 
 /* 배경이미지 */
 .backImg{
@@ -115,8 +110,6 @@ th, td{ border : 1px solid; padding : 10px 5px; font-size: 20px;}
     text-align: center;
     font-size: 30px;
 }
-
-ul li {list-style: none;}
 
 
 
@@ -168,73 +161,3 @@ ul li {list-style: none;}
     font-size: 25px;
     border : none;
 }
-
-
-/* logo */
-.youtube{
-    width: 70px;
-    height: 70px;
-    background-image: url("free-icon-youtube-3669688.png");
-    background-repeat : no-repeat;
-    background-size : cover;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    position: fixed;
-    right: 20px;
-    top : 250px;
-}
-.youtube:hover{
-    border: 3px solid #EB1C24;
-}
-.instagram{
-    width: 70px;
-    height: 70px;
-    background-image: url("instagram.png");
-    background-repeat : no-repeat;
-    background-size : cover;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    position: fixed;
-    right: 20px;
-    top : 350px;
-}
-.instagram:hover{
-    border: 3px solid #EB1C24;
-}
-.twitter{
-    width: 70px;
-    height: 70px;
-    background-image: url("twitter.png");
-    background-repeat : no-repeat;
-    background-size : cover;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    position: fixed;
-    right: 20px;
-    top : 450px;
-}
-.twitter:hover{
-    border: 3px solid #EB1C24;
-}
-
-.facebook{
-    width: 70px;
-    height: 70px;
-    background-image: url("facebook.png");
-    background-repeat : no-repeat;
-    background-size : cover;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    position: fixed;
-    right: 20px;
-    top : 550px;
-}
-.facebook:hover{
-    border: 2px solid #EB1C24;
-}
-/* .logo{
-    position: fixed;
-    right: 0;
-    margin-top: 190px;
-    margin-left: 200px;
-} */
