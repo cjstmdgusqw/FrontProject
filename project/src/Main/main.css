@@ -17,6 +17,7 @@ body{ min-width: 1090px; }
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
 }
 .main2{
     top : 10%;
@@ -55,32 +56,31 @@ body{ min-width: 1090px; }
     right: 0;
     top : 0; */
 }
-.subnav > li  > a{ line-height : 40px;  position: relative;}
-.subnav > li > ul{width:100%; position: relative; }
-.subnav > li ul li{white-space:nowrap;}
+.subnav li{width: 110px;}
+.subnav > li  > a{ line-height : 40px; position: relative;}
+.subnav > li > ul{width:100%;}
 .subnav{
     display: flex;
     flex-wrap: wrap;
 }
 .subnav::after{content:''; display:block; clear:both;}
-.subnav li{
-    padding :10px 20px;
+#root > div > div > div > ul > li {
+    padding : 10px 30px;
     list-style-type: none;
 }
-.subnav a{
+#root > div > div:nth-child(1) > div > ul > li > a{
     font-size: 25px;
     color: white;
-    padding: 20px 20px;
 }
-.nav > ul > li> ul > li > a{
-    font-size: 20px;
-    float : left;
-    margin-top: -20px;
-    height: 30px;
-}   
-.nav > ul > li> ul > li > a:hover{
+.subsubnav a{
+    color : white;
+    font-size: 15x;
+    float: left;
+    padding: 0px 15px;
+    line-height: 40px;
+}
 
-}
+
 
 
 .home2{
@@ -95,12 +95,9 @@ body{ min-width: 1090px; }
 }
 
 /* 메인메뉴 */
-
-
-div.nav > ul > li > a:hover{
-    color:red;  
+#root > div > div:nth-child(1) > div > ul > li > a:hover{
+    color:red;
 }
-
 
 /* 서브메뉴 */
 
@@ -124,11 +121,14 @@ div.nav > ul > li > ul > li > a:hover{
 /* 테이블 */
 .table{
     width : 90%;
-    height: 100px;
+    height: 120px;
     margin: 15px auto;
     text-align: left;
+    border-collapse: collapse;
+    color : gray;
 }
-th, td{padding : 5px 22px; font-size: 17px; border: red;}
+th{color : white; font-size: 30px; font-weight: 800;}
+th, td{padding : 7px 22px; font-size: 17px;}
 
 
 
@@ -143,6 +143,16 @@ ul li {list-style: none;}
 
 #main > div.main > div.item.item1 > div > div{
     width : 420px;
+}
+
+.KT{
+    border: 1px solid red;
+    border-spacing: 0;
+    border-radius: 50%;
+}
+.KT td{
+    font-weight: 700;
+    color : white;
 }
 
 /* 이미지 로고 */
@@ -181,6 +191,12 @@ ul li {list-style: none;}
     margin-top: 70px;
     font-size: 30px;
 }
+
+
+ /* div.item.item1  tr:nth-of-type(3){
+   color : red;
+
+} */
 
 
 
@@ -226,7 +242,6 @@ ul li {list-style: none;}
     grid-column: 1 / span 2;
     grid-row: 1;
     height: 300px;
-    border : 3px solid black;
 }
 .item1 p{
     font-size: 20px;
@@ -262,9 +277,7 @@ ul li {list-style: none;}
     border : none;
 }
 
-.main2 > div.item.item1 > table > tbody > tr:nth-child(3){
-    border: 3px solid red;
-}
+
 
 /* logo */
 #logo{

@@ -33,12 +33,12 @@ const Rank = () => {
             {
                 accs.filter(num => num.rank > 3 && num.rank < 9).map(acc=>{
                     return(
-                        <tr>
-                        <td>{acc.rank}</td>
-                        <td>{acc.name}</td>
-                        <td>{acc.win}</td>
-                        <td>{acc.lose}</td>
-                        <td>{acc.draw}</td>
+                        <tr className={acc.name}>
+                            <td >{acc.rank}</td>
+                            <td >{acc.name}</td>
+                            <td>{acc.win}</td>
+                            <td>{acc.lose}</td>
+                            <td>{acc.draw}</td>
                         </tr>
                     )
                 })
