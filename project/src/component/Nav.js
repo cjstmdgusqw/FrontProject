@@ -1,5 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
+import {Link} from 'react-router-dom';
 
 function Nav () {
     $(function(){
@@ -16,15 +17,15 @@ function Nav () {
     <div>
         <div className="nav">
             <ul className="subnav">
-                <li><a href = "#!">HOME</a></li>
+                <li><Link to = {'/'}>HOME</Link></li>
                 <li>
-                    <a href="#!">PLAYER</a>
+                    <Link to = {'/Proteam'}>PLAYER</Link>
                     <ul className = "subsubnav">
                         <li><a href = "#!">감독/코치</a></li><br/>
-                        <li><a href = "#!">내야수</a></li><br/>
-                        <li><a href = "#!">외야수</a></li><br/>
-                        <li><a href = "#!">투수</a></li><br/>
-                        <li><a href = "#!">포수</a></li>
+                        <li><Link to = {'/Proteam/Picher'}>투수</Link></li><br/>
+                        <li><Link to = {'/Proteam/Catcher'}>포수</Link></li><br/>
+                        <li><Link to = {'/Proteam/Infielder'}>내야수</Link></li><br/>
+                        <li><Link to = {'/Proteam/Outfielder'}>외야수</Link></li>
                     </ul>
                 </li>
                 <li>
