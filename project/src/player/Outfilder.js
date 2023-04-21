@@ -3,7 +3,6 @@ import Select from "./Select";
 
 const Outfilder = (props) =>{
     const[Player, setplayer] = useState([]);
-    console.log(props);
     useEffect(
         () =>{
             let player = [
@@ -21,7 +20,6 @@ const Outfilder = (props) =>{
         <>
             <div className='Position'>
                 <Select/>
-                {/* <div className="Title">Picher</div> */}
 
                 <div className="Player">
                 <div className="Title">outfielder</div>
