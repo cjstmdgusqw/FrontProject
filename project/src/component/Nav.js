@@ -46,9 +46,9 @@ function Nav () {
                     
                 </li> 
                 <li>
-                    <a href="#!">TICKET</a>  
+                <Link to = {'/Ticket'}>TICKET</Link> 
                   
-                    </li>
+                </li>
                 <div>
                     <img className='MainLOGO' src='/img/KTOL.png' alt="LOGO"></img>
                 </div>

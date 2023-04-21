@@ -10,6 +10,8 @@ import Catcher from './player/Catcher';
 import Infilder from './player/Infielder';
 import Outfilder from './player/Outfilder';
 import Player from './player/Player';
+import Game from './ticket/Game';
+
 
 function App() {
   return (
@@ -23,7 +25,8 @@ function App() {
           <Route exact path = '/Proteam/Catcher' element = {<Catcher/>}></Route>
           <Route exact path = '/Proteam/Infielder' element = {<Infilder/>}></Route>
           <Route exact path = '/Proteam/Outfielder' element = {<Outfilder/>}></Route>
-          <Route exact path = '/Proteam/id' element = {<Player/>}></Route>
+          <Route exact path = '/Proteam/:id' element = {<Player/>}></Route>
+          <Route exact path = '/Ticket' element = {<Game/>}></Route>
         </Routes>
     <Footer/>
     </div>
