@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400');
 body{
     background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1) ), url("../../public/img/KT123.jpg");
     background-attachment: fixed;
@@ -7,9 +8,8 @@ body{
 }
 .Position{
     margin: 0 auto;
-    z-index: 0;
     width: 1450px;
-    min-height: 1000px;
+    min-height: 1500px;
 }
 
 .container{
@@ -78,24 +78,67 @@ body{
 
 .Content{
     display: grid;
-    grid-template-columns: 30% 70% ;
+    grid-template-columns: 33% 67% ;
     gap: 10px;
-    height: 400px;
-    margin-top: 200px;
+    height : 400px;
+    width: 1200px;
+    margin : 150px auto;
 }
 .record{
     grid-row: 1 / 4;
-    background-color: red;  
-    position: relative;  
+    background-color: rgba(0, 0, 0, 0.7);
+    border-top: 2px solid white ;
+    border-bottom: 2px solid white ;
+}
+.playerimg img{
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+}
+.playerNumber{
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.playerName{
+    margin-top: 25px; 
+    margin-left: 20px;
+}
+.playerRecord{
+    margin-top: 30px; 
+}
+.season{
+    margin-top: 45px; 
+    margin-left: 20px;
+    font-size: 20px;
+    color: gray;
 }
 .record2{
-    background-color: yellow;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    font-size: 35px;
+    color: white;
+    border-top: 2px solid white ;
+    border-bottom: 2px solid white ;
+    
 }
 .record3{
-    background-color: blue;
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.7);
+    grid-template-columns: 30% 30% 30%;
+    font-size: 23px;
+    color: white;
+    grid-auto-rows: minmax(100px, auto);
+    border-top: 2px solid white ;
+    border-bottom: 2px solid white ;
 }
 .record4{
-    background-color: green;
+    border-top: 2px solid white ;
+    border-bottom: 2px solid white ;
+}
+.fight{
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
 }
 
 

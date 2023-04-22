@@ -4,12 +4,14 @@
 }
 a{text-decoration: none; color : inherit;}
 body{ min-width: 1090px; }
+.position{
+    min-height: 1500px;
+}
 #container{
     width : 100%; 
     margin : 0 auto;
 }
 /* .header{ height: 150px;} */
-
 #footer{background-color: yellow;}
 .main{  
     margin: 0px auto;
@@ -17,7 +19,6 @@ body{ min-width: 1090px; }
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
 }
 .main2{
     top : 10%;
