@@ -1,5 +1,6 @@
 import '../ticket/ticket.css'
 import { useState, useEffect } from 'react';
+import {Link} from 'react-router-dom';
 
 const Game = () =>{
     const[game, setgame] = useState([]);
@@ -42,7 +43,7 @@ const Game = () =>{
                             <div className='VS'>
                                 <div>VS</div>
                                 <div className='time'><h2></h2>날짜 : &nbsp;{game.date}&nbsp;&nbsp;{game.Time}</div>
-                                <div className= 'button'><button >예매하기</button></div>
+                                <div className= 'button'><Link to = {`/Ticket/${game.id}`}><button>예매하기</button></Link></div>
                             </div>
                             <div className='Away'>Away</div>
                             <div className='AwayLogo'><img src = {game.Awayimg}></img></div> 

@@ -12,6 +12,7 @@ import Outfilder from './player/Outfilder';
 import Player from './player/Player';
 import Game from './ticket/Game';
 import Player2 from './player/Player2';
+import Ticket from './ticket/Ticket';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route exact path = '/Proteam/Picher/:id' element = {<Player/>}></Route>
           <Route exact path = '/Proteam/Hitter/:id' element = {<Player2/>}></Route>
           <Route exact path = '/Ticket' element = {<Game/>}></Route>
+          <Route exact path = '/Ticket/:day' element = {<Ticket/>}></Route>
         </Routes>
     <Footer/>
     </div>

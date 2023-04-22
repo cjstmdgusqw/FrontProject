@@ -1,4 +1,4 @@
-
+/* Ticket  */
 .stadium{
     width: 500px;
     height: 100px;
@@ -42,7 +42,6 @@
 .Title2 h1 span{
     color : red
 }
-
 .Home{
     width: 20%;
     height: 100px;
@@ -123,4 +122,190 @@
     float : right;
     width: 20%;
     margin-top: 50px;
+}
+
+
+/* Game.js */
+.Stadium{
+    width: 1600px;
+    height: 1000px;
+    display: flex;
+    margin: 100px auto;
+}
+.KTStadium{
+    width: 900px;
+    height: 900px;
+    margin: 50px 40px 0 auto;
+    border: 3px solid rgba(255, 255, 255, 1);
+    border-radius: 30px;
+}
+.KTStadium img{
+    width: 800px;
+    height: 700px;
+    margin-top: 50px;
+    border-radius: 30px;
+}
+
+.Buy{
+    width: 500px;
+    height: 900px;
+    margin: 50px auto 0 10px ;
+    border: 3px solid rgba(255, 255, 255, 1);
+    border-radius: 30px;
+}
+
+.Ticketname{
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 30px;
+}
+.price{
+    width: 500px;
+    height: 200px;
+    margin-top: 250px;
+    background-color: black;
+    border-radius: 0 0 30px 30px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    display: flex;
+    flex-direction:row-reverse
+}
+
+.price button{
+    width: 150px;
+    height: 40px;
+    margin-top: 100px;
+    margin-right: 40px;
+    margin-left: -70px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border: 3px ;
+    font-size: 20px;
+
+}
+
+.ticketprice{
+    width: 500px;
+    line-height: 240px;
+    color: white;
+    font-size: 25px;
+    margin-right: 80px;
+}
+
+.Ticketname button{
+    width: 170px;
+    height: 40px;
+    margin: 10px 15px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top : 12px;
+
+}
+.Ticketname button:hover{
+    background-color: white;
+    color : black;
+    transition: 0.5s;
+    opacity: 1;
+}
+.button1{
+    background-color: transparent;
+    color : white;
+    border : none;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 3px solid black;
+    border: 3px solid white;
+
+}
+.button2{
+    background-color: transparent;
+    color : white;
+    border : none;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 3px solid red;
+}
+.button3{
+    background-color: transparent;
+    color : white;
+    border : none;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 5px solid #304470;
+}
+.button4{
+    background-color: transparent;
+    color : white;
+    border : none;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 3px solid yellow;
+}
+.button5{
+    background-color: transparent;
+    color : white;
+    border : none;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 3px solid red;
+}
+.button6{
+    background-color: transparent;
+    color : white;
+    border : none;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 5px solid #304470;
+}
+.button7{
+    background-color: transparent;
+    color : white;
+    border : none;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 3px solid #63c9e2;
+}
+.button8{
+    background-color: transparent;
+    color : white;
+    border : none;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 3px solid grey;
+}
+.button9{
+    background-color: transparent;
+    color : white;
+    border : none;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 3px solid blue;
+}
+.button10{
+    background-color: transparent;
+    color : white;
+    border : none;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 3px solid purple;
+}
+.button11{
+    background-color: transparent;
+    color : white;
+    border : none;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 3px solid #ed5b64;
+}
+.button12{
+    background-color: transparent;
+    color : white;
+    border : none;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 3px solid rgb(94, 218, 94);
+    
 }
