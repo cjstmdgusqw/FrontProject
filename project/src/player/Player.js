@@ -13,12 +13,12 @@ function Player(){
                 {data && (
                     <div className="Content">
                         <div className="record">
-                            <div className="playerimg">
+                            <div className="playerimg"> 
                                 <img src={data.pic.img}></img>
                             </div>
                         </div>
                         <div className="record2">
-                            <div className="playerNumber">NO.{data.pic.NUM}</div>
+                            <div className="playerNumber" >NO.{data.pic.NUM}</div>
                             <div className="playerName">{data.pic.name}</div>
                             <div className="season">2023시즌</div>
                         </div>
